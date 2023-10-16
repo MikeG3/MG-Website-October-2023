@@ -1,0 +1,59 @@
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-item:hover a {
+    color: #ff9900;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #333;
+    z-index: 1;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #ff9900;
+}
+
